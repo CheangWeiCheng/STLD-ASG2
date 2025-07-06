@@ -72,9 +72,6 @@ public class CoinBehaviour : MonoBehaviour
         /// </summary>
         player.ModifyScore(coinValue);
     
-        // Notify CoinManager
-        FindFirstObjectByType<CoinManager>().CoinCollected();
-    
         Destroy(gameObject); // Destroy the coin object
     }
 }

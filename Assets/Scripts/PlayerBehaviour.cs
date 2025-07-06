@@ -68,6 +68,7 @@ public class PlayerBehaviour : MonoBehaviour
         keycardUI.enabled = false; // Hide the keycard image initially
         if (!mainCamera) mainCamera = Camera.main;
         fireAudioSource = GetComponent<AudioSource>();
+        congratulatoryText.gameObject.SetActive(false);
     }
 
     /// <summary>
